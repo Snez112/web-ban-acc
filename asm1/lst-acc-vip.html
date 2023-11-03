@@ -1,0 +1,408 @@
+
+    
+    <div class="body">
+        <div class="container">
+            <div class="mainshop-hight">
+                <div class="mainshop-hight-title">
+                    <h1><b>ACC VIP CẤP CAO GENSHIN</b></h1>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-3 search-zone">
+                        <div class="card-color">
+                            <div class="header">
+                                <p><b>Tìm kiếm</b></p>
+                                <hr>
+                                <p style="margin-bottom: 10px; margin-top: -10px;">Bỏ trống tuỳ ý</p>
+                            </div>
+                            <div class="form-group row">
+                                <label for="search" class="form-label"><b>Tướng 5*</b>
+                                </label>
+
+                                <div class="col-md-8">
+                                    <input id="search" type="text" class="form-control" name="search" value=""
+                                        required="" autocomplete="new-search" autofocus="" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="search" class="form-label"><b>Vũ khí</b>
+                                </label>
+                                <div class="col-md-8">
+                                    <input id="search" type="text" class="form-control" name="search" required=""
+                                        autocomplete="new-search" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="search" class="form-label"><b>AR</b>
+                                </label>
+                                <div class="col-md-8">
+                                    <input id="search" type="text" class="form-control" name="search" required=""
+                                        autocomplete="new-search" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="search" class="form-label"><b>Giá</b>
+                                </label>
+                                <div class="col-md-8">
+                                    <input id="search" type="text" class="form-control" name="search" required=""
+                                        autocomplete="new-search" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="search" class="form-label"><b>Sắp xếp giá</b>
+                                </label>
+                                <div class="col-md-8">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select</option>
+                                        <option value="1">Tăng dần</option>
+                                        <option value="2">Giảm dần</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="search" class="form-label"><b>Server</b>
+                                </label>
+                                <div class="col-md-8">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select</option>
+                                        <option value="1">ASIA</option>
+                                        <option value="2">AMERICA</option>
+                                        <option value="2">EUROPE</option>
+                                        <option value="2">TH, HK, MO</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="search" class="form-label"><b>Điền mã acc</b>
+                                </label>
+                                <div class="col-md-8">
+                                    <input id="search" type="text" class="form-control" name="search" required=""
+                                        autocomplete="new-search" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+
+                                <div class="col-md-8">
+                                    <input class="btn btn-outline-warning " type="submit" value="Submit">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-9" >
+                        <div class="row row-cols-1 row-cols-md-3 g-4" ">
+                            <!--acc1-->
+                            <div class="col" ng-repeat="inf in lstinfoacc">
+                                <div class="card h-100">
+                                    <img src="{{inf.img}}" class="card-img-top" alt="..." style="height: 150px;">
+                                    <div class="card-body" style="background-color: rgb(17, 17, 17);">
+                                        <div class="card-title">
+                                            <div class="row row-cols-1 row-cols-md-3 g-3">
+
+                                                <div class="col">
+                                                    <p <b>AR LEVEL</b></p>
+                                                    <p style="margin-top: -20px;"> <b>{{inf.Ar}}</b></p>
+                                                </div>
+                                                <div class="col">
+                                                    <p <b>KHU VỰC</b></p>
+                                                    <p style="margin-top: -20px;"> <b>{{inf.Location}}</b></p>
+                                                </div>
+                                                <div class="col">
+                                                    <p <b>TƯỚNG 5*</b></p>
+                                                    <p style="margin-top: -20px;"> <b>{{inf.char}}</b></p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="row g-0 info-line">
+                                                <div class="row g-0 text-center">
+                                                    <span class="card-text" style="font-size: .8rem;">
+                                                        {{inf.description}}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr style="color: #FFC107;">
+                                        <div class="row g-0 info-line">
+                                            <div class="row g-0 text-center ">
+                                                <label class="col-12 pb-2" style="color: #FFC107;">
+                                                    Tướng : 11
+                                                </label>
+                                                <span class="col hero-details">
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/collei.png')"
+                                                        data-toggle="tooltip" title="" data-original-title="collei"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/gorou.png')"
+                                                        data-toggle="tooltip" title="" data-original-title="gorou"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/aloy.png')"
+                                                        data-toggle="tooltip" title="" data-original-title="aloy"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/kujou-sara.png')"
+                                                        data-toggle="tooltip" title=""
+                                                        data-original-title="kujou-sara"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/yoimiya.png')"
+                                                        data-toggle="tooltip" title=""
+                                                        data-original-title="yoimiya"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/xingqiu.png')"
+                                                        data-toggle="tooltip" title=""
+                                                        data-original-title="xingqiu"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/xiangling.png')"
+                                                        data-toggle="tooltip" title=""
+                                                        data-original-title="xiangling"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/keqing.png')"
+                                                        data-toggle="tooltip" title="" data-original-title="keqing"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/jean.png')"
+                                                        data-toggle="tooltip" title="" data-original-title="jean"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/diluc.png')"
+                                                        data-toggle="tooltip" title="" data-original-title="diluc"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/albedo.png')"
+                                                        data-toggle="tooltip" title="" data-original-title="albedo"></i>
+
+                                            </div>
+                                        </div>
+                                        <div class="row g-0 info-line">
+                                            <div class="row g-0 text-center">
+                                                <label class="col-12 pb-2" style="color: #FFC107;">VŨ KHÍ:1</label>
+                                                <span class="col hero-details">
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/weap/dien-tich-tay-phong.png')"
+                                                        data-toggle="tooltip" title=""
+                                                        data-original-title="dien-tich-tay-phong"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row g-0">
+                                            <a href="#acc_detail/{{inf.id}}" class="btn btn-primary product-detail-button mb-2">Chi tiết</a>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                           <!--end-acc1-->
+                           <!--acc2-->
+                            <!-- <div class="col">
+                                <div class="card h-100">
+                                    <img src="img/acc/acc2.png" class="card-img-top" alt="..." style="height: 150px;">
+                                    <div class="card-body" style="background-color: rgb(17, 17, 17);">
+                                        <div class="card-title">
+                                            <div class="row row-cols-1 row-cols-md-3 g-3">
+
+                                                <div class="col">
+                                                    <p <b>AR LEVEL</b></p>
+                                                    <p style="margin-top: -20px;"> <b>55</b></p>
+                                                </div>
+                                                <div class="col">
+                                                    <p <b>KHU VỰC</b></p>
+                                                    <p style="margin-top: -20px;"> <b>ASIA</b></p>
+                                                </div>
+                                                <div class="col">
+                                                    <p <b>TƯỚNG 5*</b></p>
+                                                    <p style="margin-top: -20px;"> <b>9</b></p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="row g-0 info-line">
+                                                <div class="row g-0 text-center">
+                                                    <span class="card-text" style="font-size: .8rem;">
+                                                        Ar55 : YaeMikoCm1
+                                                        ĐTTP+Albedo+YoimiyaCm1+DIluc+Jean+Keqing+ALoy+SaraCM4+XIngqiuCm1+XIanglingCM4+ColleiCm2+GorouCm3+Banner
+                                                        NV 7 trang+Banner thường 16 trang
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </div>
+                                        <div class="row g-0 info-line">
+                                            <div class="row g-0 text-center ">
+                                                <label class="col-12 pb-2" style="color: #FFC107;">
+                                                    Tướng : 11
+                                                </label>
+                                                <span class="col hero-details">
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/collei.png')"
+                                                        data-toggle="tooltip" title="" data-original-title="collei"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/gorou.png')"
+                                                        data-toggle="tooltip" title="" data-original-title="gorou"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/aloy.png')"
+                                                        data-toggle="tooltip" title="" data-original-title="aloy"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/kujou-sara.png')"
+                                                        data-toggle="tooltip" title=""
+                                                        data-original-title="kujou-sara"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/yoimiya.png')"
+                                                        data-toggle="tooltip" title=""
+                                                        data-original-title="yoimiya"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/xingqiu.png')"
+                                                        data-toggle="tooltip" title=""
+                                                        data-original-title="xingqiu"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/xiangling.png')"
+                                                        data-toggle="tooltip" title=""
+                                                        data-original-title="xiangling"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/keqing.png')"
+                                                        data-toggle="tooltip" title="" data-original-title="keqing"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/jean.png')"
+                                                        data-toggle="tooltip" title="" data-original-title="jean"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/diluc.png')"
+                                                        data-toggle="tooltip" title="" data-original-title="diluc"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/albedo.png')"
+                                                        data-toggle="tooltip" title="" data-original-title="albedo"></i>
+
+                                            </div>
+                                        </div>
+                                        <div class="row g-0 info-line">
+                                            <div class="row g-0 text-center">
+                                                <label class="col-12 pb-2" style="color: #FFC107;">VŨ KHÍ:1</label>
+                                                <span class="col hero-details">
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/weap/dien-tich-tay-phong.png')"
+                                                        data-toggle="tooltip" title=""
+                                                        data-original-title="dien-tich-tay-phong"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row g-0">
+                                            <a href="" class="btn btn-primary product-detail-button mb-2">Chi tiết</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div> -->
+                            <!--end-acc2-->
+                            <!--acc3-->
+                            <!-- <div class="col">
+                                <div class="card h-100">
+                                    <img src="img/acc/acc3.png" class="card-img-top" alt="..." style="height: 150px;">
+                                    <div class="card-body" style="background-color: rgb(17, 17, 17);">
+                                        <div class="card-title">
+                                            <div class="row row-cols-1 row-cols-md-3 g-3">
+
+                                                <div class="col">
+                                                    <p <b>AR LEVEL</b></p>
+                                                    <p style="margin-top: -20px;"> <b>55</b></p>
+                                                </div>
+                                                <div class="col">
+                                                    <p <b>KHU VỰC</b></p>
+                                                    <p style="margin-top: -20px;"> <b>ASIA</b></p>
+                                                </div>
+                                                <div class="col">
+                                                    <p <b>TƯỚNG 5*</b></p>
+                                                    <p style="margin-top: -20px;"> <b>9</b></p>
+                                                </div>
+
+                                            </div>
+                                            <hr>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="row g-0 info-line">
+                                                <div class="row g-0 text-center">
+                                                    <span class="card-text" style="font-size: .8rem;">
+                                                        Ar27 : Chưa SET SN (ZIn 40 Nhựa) Baal+ AYATO Haran GEPPAKU
+                                                        FUTSU X2+SaraCm2+Xiangling+Sucrsoe+HeizouCm1+BAnner VK 4
+                                                        trang+Banner NV 3 trang
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </div>
+                                        <div class="row g-0 info-line">
+                                            <div class="row g-0 text-center ">
+                                                <label class="col-12 pb-2" style="color: #FFC107;">
+                                                    Tướng : 11
+                                                </label>
+                                                <span class="col hero-details">
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/collei.png')"
+                                                        data-toggle="tooltip" title="" data-original-title="collei"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/gorou.png')"
+                                                        data-toggle="tooltip" title="" data-original-title="gorou"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/aloy.png')"
+                                                        data-toggle="tooltip" title="" data-original-title="aloy"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/kujou-sara.png')"
+                                                        data-toggle="tooltip" title=""
+                                                        data-original-title="kujou-sara"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/yoimiya.png')"
+                                                        data-toggle="tooltip" title=""
+                                                        data-original-title="yoimiya"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/xingqiu.png')"
+                                                        data-toggle="tooltip" title=""
+                                                        data-original-title="xingqiu"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/xiangling.png')"
+                                                        data-toggle="tooltip" title=""
+                                                        data-original-title="xiangling"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/keqing.png')"
+                                                        data-toggle="tooltip" title="" data-original-title="keqing"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/jean.png')"
+                                                        data-toggle="tooltip" title="" data-original-title="jean"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/diluc.png')"
+                                                        data-toggle="tooltip" title="" data-original-title="diluc"></i>
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/hero/albedo.png')"
+                                                        data-toggle="tooltip" title="" data-original-title="albedo"></i>
+
+                                            </div>
+                                        </div>
+                                        <div class="row g-0 info-line">
+                                            <div class="row g-0 text-center">
+                                                <label class="col-12 pb-2" style="color: #FFC107;">VŨ KHÍ:1</label>
+                                                <span class="col hero-details">
+                                                    <i class="hero-icon"
+                                                        style="background-image: url('img/weap/dien-tich-tay-phong.png')"
+                                                        data-toggle="tooltip" title=""
+                                                        data-original-title="dien-tich-tay-phong"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row g-0">
+                                            <a href="" class="btn btn-primary product-detail-button mb-2">Chi tiết</a>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div> -->
+                            <!--end-acc3-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    </div>
+
+
+    

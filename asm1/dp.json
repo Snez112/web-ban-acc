@@ -1,0 +1,111 @@
+{
+  "shopacc": [
+    {
+      "title": "ACC VIP CẤP CAO",
+      "img": "img/shop/shop1.png",
+      "SoTK": "13.000",
+      "DaBan": "0"
+    },
+    {
+      "title": "ACC VIP CẤP THẤP",
+      "img": "img/shop/shop2.png",
+      "SoTK": "13.000",
+      "DaBan": "0"
+    },
+    {
+      "title": "ACC REROLL",
+      "img": "img/shop/shop3.png",
+      "SoTK": "13.000",
+      "DaBan": "0"
+    },
+    {
+      "title": "ACC RANDOM",
+      "img": "img/shop/shop4.png",
+      "SoTK": "13.000",
+      "DaBan": "0"
+    }
+  ],
+  "info-acc": [
+    {
+      "id": 120272,
+      "Ar": 55,
+      "Location": "ASIA",
+      "tk": "accreroll123",
+      "pass": "1234",
+      "description": "Ar26 : Chưa SET SN (ZIn 40 Nhựa) Baal+ AYATO Haran GEPPAKU FUTSU X2+SaraCm2+Xiangling+Sucrsoe+HeizouCm1+BAnner VK 4 trang+Banner NV 3 trang",
+      "gia": "300.000đ"
+    },
+    {
+      "tk": "3",
+      "pass": "3",
+      "Ar": "3",
+      "gia": "3",
+      "description": "3",
+      "id": 120273
+    },
+    {
+      "tk": "4",
+      "pass": "4",
+      "gia": "4",
+      "description": "4",
+      "id": 120274
+    }
+  ],
+  "user": [
+    {
+      "name": "Void d",
+      "username": "Voidd",
+      "sdt": "123456789",
+      "email": "rongrangsun25@gmail.com",
+      "password": "12345678",
+      "check_pass": "12345678",
+      "id": "sqB3Xv4"
+    },
+    {
+      "name": "Void d",
+      "username": "Void2",
+      "sdt": "123456789",
+      "email": "rongrangsun25@gmail.com",
+      "password": "11111111",
+      "check_pass": "11111111",
+      "id": "LAWJONt"
+    },
+    {
+      "name": "Void d",
+      "username": "Void d",
+      "sdt": "123456789",
+      "email": "rongrangsun25@gmail.com",
+      "password": "11111111",
+      "check_pass": "11111111",
+      "id": "1sl1S3B"
+    }
+  ],
+  "history": [
+    {
+      "id": 120272,
+      "Ar": 55,
+      "Location": "ASIA",
+      "tk": "accreroll123",
+      "pass": "1234",
+      "description": "Ar26 : Chưa SET SN (ZIn 40 Nhựa) Baal+ AYATO Haran GEPPAKU FUTSU X2+SaraCm2+Xiangling+Sucrsoe+HeizouCm1+BAnner VK 4 trang+Banner NV 3 trang",
+      "gia": "300.000đ"
+    },
+    {
+      "id": "123",
+      "tk": "q",
+      "pass": "1",
+      "Ar": "123",
+      "Location": "q",
+      "gia": "123",
+      "description": "1"
+    },
+    {
+      "tk": "1",
+      "pass": "1",
+      "Ar": "11",
+      "gia": "1",
+      "description": "1",
+      "id": 120273
+    }
+  ]
+}

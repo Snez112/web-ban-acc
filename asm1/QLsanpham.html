@@ -1,0 +1,90 @@
+<div class="container" >
+    <div class="bg">
+
+    
+    <form>
+        <div class="mb-3">
+          <label   class="form-label">Id</label>
+          <input type="number" class="form-control"   aria-describedby="emailHelp" ng-model="ID">
+        </div>
+        <div class="mb-3">
+            <label   class="form-label">Tài khoản</label>
+            <input type="text" class="form-control"   aria-describedby="emailHelp" ng-model="tk">
+          </div>
+          <div class="mb-3">
+            <label   class="form-label">Mật khẩu</label>
+            <input type="text" class="form-control"   aria-describedby="emailHelp" ng-model="pass">
+          </div>
+        <div class="mb-3">
+          <label   class="form-label">AR</label>
+          <input type="text" class="form-control"   ng-model="Ar">
+        </div>
+       
+        <div class="mb-3">
+            <label   class="form-label">Server</label>
+            <select class="form-select">
+              <option value="asia">ASIA</option>
+              <option value="CN">CN</option>
+              <option value="KR/US/UK">KR/US/UK</option>
+              
+            </select>
+            <!-- <input type="text" class="form-control"   aria-describedby="emailHelp" ng-model="Location"> -->
+          </div>
+          <div class="mb-3">
+            <label   class="form-label">Giá</label>
+            <input type="text" class="form-control"   ng-model="gia">
+          </div>
+          <div class="mb-3">
+            <label   class="form-label">Mô tả</label>
+            <input type="text" class="form-control"   ng-model="description">
+          </div>
+
+        <button type="submit" class="btn btn-primary" ng-click="add()">Thêm</button>
+        <button type="submit" class="btn btn-primary" ng-click="update()">Update</button>
+      </form>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">AR</th>
+            <th scope="col">Server</th>
+            <th scope="col">Giá</th>
+            <th scope="col">Tài khoản</th>
+            <th scope="col">Mật khẩu</th>
+            <th scope="col">Chi tiết sản phẩm</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="sp in lstQLacc">
+            <th>{{sp.ID}}</th>
+            <td>{{sp.Ar}}</td>
+            <td>{{sp.Location}}</td>
+            <td>{{sp.gia}}</td>
+            <td>{{sp.tk}}</td>
+            <td>{{sp.pass}}</td>
+            <td>{{sp.description}}</td>
+            <td>
+                <button ng-click="watch(sp.id)">Xem</button>
+                <button ng-click="detail(sp.id)">chỉnh sửa</button>
+                <button ng-click="delete(sp.id)">Xóa</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+<style>
+    .bg{
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        margin-top: 10rem;
+    }
+    div,th,td{
+        color: #FFC107;
+    }
+    form{
+        width: 90%;
+        margin-left: 3.2rem;
+        padding-top: 10px;
+    }
+</style>

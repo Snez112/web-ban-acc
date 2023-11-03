@@ -1,0 +1,59 @@
+<div >
+    <h1>Acc Genshin đã mua</h1>
+    <div class="bg bg-color">
+        <table>
+            <tr>
+                <th class="head-table">ID</th>
+                <th class="head-table">Tên đăng nhập</th>
+                <th class="head-table">Mật khẩu</th>
+                <th class="head-table">Thông tin</th>
+                <th class="head-table">Giá</th>
+               
+                <th class="head-table">Mua lúc</th>
+            </tr>
+            <tr ng-repeat="acc in accsell">
+                <td class="list-item-table">{{acc.id}}</td>
+                <td class="list-item-table">{{acc.tk}}</td>
+                <td class="list-item-table">{{acc.pass}}</td>
+                <td class="list-item-table">{{acc.description}}</td>
+                
+                <td class="list-item-table">{{acc.gia}}</td>
+                <td class="list-item-table"></td>
+            </tr>
+            <tr>
+                <th class="head-table">ID</th>
+                <th class="head-table">Tên đăng nhập</th>
+                <th class="head-table">Mật khẩu</th>
+                <th class="head-table">Thông tin</th>
+                <th class="head-table">Giá</th>
+                
+                <th class="head-table">Mua lúc</th>
+            </tr>
+        </table>
+    </div>
+</div>
+<style>
+    h1{
+        color: #FFC107;
+        text-align: center;
+        margin-top: 10rem;
+    }
+    .bg{
+        background-color: rgba(0, 0, 0, 0.65);
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        
+    }
+    table{
+        width: 90%;
+        border-collapse: collapse;
+        margin-top: 4%;
+        margin-left: 5%;
+    }
+    td,th{
+        border: 0.5px solid #D7C9BD;
+        font-size: 1.2rem;
+        color: #A17537;
+    }
+</style>

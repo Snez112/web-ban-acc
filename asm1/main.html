@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/bootrap.min.css">
+<link rel="stylesheet" href="css/bootrap.icon.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<script src="/javascript/Main.js"></script>
+<script src="/javascript/SPA.js"></script>
+<script src="/javascript/login.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+<body ng-app="myapp">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-color" style="position: fixed; top: 0; left: 0; right: 0; z-index: 999; ">
+            <div class="container">
+                <a class="navbar-brand" href="#home">
+                    <img src="img/logo.png" alt="" style="width: 100px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+                        class="bi bi-house-fill icon-home" viewBox="0 0 16 16">
+                        <path
+                            d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
+                        <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z" />
+                    </svg>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <b>Nạp tiền</b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
+                                            <path
+                                                d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
+                                        </svg>Nạp bằng thẻ cào
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-bank2" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916l-7.5-5zM12.375 6v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1H.5z" />
+                                        </svg>Nạp bằng Bank,ví
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><b>Nạp game</b></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <b>Lịch sử mua</b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#history">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                            <path
+                                                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                                        </svg>Genshin</a></li>
+    
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <b>Menu của Shop</b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                        href="https://www.facebook.com/sp.shopgenshin24h/posts/pfbid02c6rr6452EmGqoBZ8FnTCucRdT6ssfzAmT62MbBGLGht6gocxh4rnmupJCDUCMRigl">Check
+                                        uy tín của shop</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.facebook.com/groups/1159069464847636">Link hội nhóm thảo
+                                        luận</a></li>
+    
+                                <li><a class="dropdown-item" href="https://www.facebook.com/radio.teyvat">Link page hỗ
+                                        trợ chính thức</a></li>
+                                <li><a class="dropdown-item" href="https://www.facebook.com/sp.shopgenshin24h">Link hỗ
+                                        trợ</a></li>
+    
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about"><b>Giới thiệu</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#QLSP"><b>Quản lí sản phẩm</b></a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="button">
+                        <button class="btn btn-warning" type="button"><a href="/user/reg.html" style="color: black;"> Đăng
+                                kí</a>
+                        </button>
+                        <button class="btn btn-warning" type="button"><a href="/user/login.html" style="color: black;">Đăng
+                                nhập</a>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div ng-view></div>
+    <div ng-include="'layout/footer.html'"></div>
+    
+<script src="/javascript/lstinfoacc.js"></script>
+
+</body>
+
+</html>
